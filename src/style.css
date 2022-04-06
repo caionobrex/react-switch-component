@@ -1,0 +1,32 @@
+.switch {
+  width: 60px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.switch > div {
+  position: absolute;
+  height: 15px;
+  top: 50%;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transform: translateY(-50%);
+}
+
+.switch > div:nth-child(1) {
+  width: 15px;
+  border-radius: 999px;
+  left: 3px;
+  background-color: red;
+}
+
+.switch > div:nth-child(2) {
+  width: 100%;
+  background-color: yellow;
+  border-radius: 20px;
+  z-index: -1;
+}
